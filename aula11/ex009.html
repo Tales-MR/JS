@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+
+    <span>Velocidade do carro: </span> <input type="number" name="txtvel" id="txtvel"> <span>Km/h</span>
+    <input type="button" value="Verificar" id="ver">
+    <p id="res">Resultado...</p>
+
+    <script>
+        var ctxkm = document.querySelector('input#txtvel');
+        var ctxb = document.querySelector('input#ver');
+        var res = document.querySelector('p#res')
+
+        var ver = ctxb.addEventListener('click', calc)
+        
+
+        function calc() {
+            var numkm = Number(ctxkm.value);
+
+            if (numkm > 70) {
+                res.innerText = 'Ultrapassou o limite de velocidade!';
+            }
+            else {
+                res.innerText = 'Está dentro do limite de velocidade';
+            }
+        }
+    </script>
+</body>
+</html>

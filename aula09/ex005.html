@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(115, 169, 255);
+
+            color: white;
+
+            font: normal 1em Arial;
+           }
+
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+
+    <p id="msg">Aprendendo a usar o <strong>DOM</strong> em HTML5</p>
+
+    <div>Clique em mim</div>
+
+    <section>
+        <article>
+            <p class="msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dolor dicta debitis placeat quas? Laborum, aspernatur ea odit veniam, id, est eveniet inventore enim aliquam ratione sit repellat eos hic.</p>
+
+        </article>
+
+    </section>
+
+    <script>
+        var p = document.querySelector('p.msg')
+
+        p.style.background = 'blue'
+
+        p.style.color = 'black'
+
+        p.innerText = 'Aguarde...'
+    </script>
+</body>
+</html>

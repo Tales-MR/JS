@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+
+    <p>Digite o seu país de origem: </p> 
+    <input type="text" id="pais" placeholder="..."> 
+    <input type="button" value="Confirmar" id="conf">
+    <p id="nac"></p>
+
+    <script>
+        var conf = document.querySelector('input#conf');
+        var res  = document.querySelector('p#nac')
+
+        conf.addEventListener('click', check);
+        
+        function check() {
+            var naci = document.querySelector('input#pais');
+
+            if (naci.value == 'Brasil') {
+                res.innerText = 'Você é Brasileiro';
+            } else {
+                res.innerText = 'Você é extrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
