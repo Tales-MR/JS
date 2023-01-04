@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: white;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Teste de Nacionalidade</h1>
-
+    <input type="button" value="Modo Noturno" id="noturno">
+    <h1>Teste de Nacionalidade</h1> <span id="hora"></span>
+ 
     <p>Digite o seu país de origem: </p> 
     <input type="text" id="pais" placeholder="..."> 
     <input type="button" value="Confirmar" id="conf">
@@ -17,16 +24,50 @@
     <script>
         var conf = document.querySelector('input#conf');
         var res  = document.querySelector('p#nac')
+        var notu = document.querySelector('input#noturno')
+
 
         conf.addEventListener('click', check);
-        
+        document.body.addEventListener('mouseenter', h)
+
+        notu.addEventListener('click', noturno)
+
+        function h() {
+            var hora = document.querySelector('span#hora')
+
+            Hora = new Date()
+
+            hora.innerHTML = Hora.getHours() + ':' + Hora.getMinutes()
+        }
+
+        function noturno() {
+            document.body.style.background = 'black'; //TESTE DE COMO SERIA ALTERAR A COR DE FUNDO COM UM BOTÃO
+        }
+
         function check() {
             var naci = document.querySelector('input#pais');
 
-            if (naci.value == 'Brasil') {
+           
+
+            switch (naci.value) {
+
+            case 'Brasil' :
+
                 res.innerText = 'Você é Brasileiro';
-            } else {
-                res.innerText = 'Você é extrangeiro'
+
+                break;
+
+            case '' :
+
+                res.innerText = 'Digite um valor';
+            
+                break;
+            
+            default : 
+
+                res.innerText = 'Você é extrangeiro';
+
+                break;
             }
         }
     </script>
