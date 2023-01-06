@@ -1,0 +1,60 @@
+:root {
+    --cor1: #e2cd9f;
+    --cor2: #b9846f;
+    --cor3: rgb(72, 72, 72);
+
+    --img1: url(imagens/manha.jpg);
+    --img2: url(imagens/noite.jpg);
+    --img3: url(imagens/sol-nasc.jpg)
+}
+
+body {
+    background-color: var(--cor1);
+    font: normal 1em Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 1.7em;
+
+    color: rgb(255, 255, 255);
+}
+
+main > section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:  0 0 6px rgba(0, 0, 0, 0.52);
+
+
+    padding: 30px;
+    width: 500px;
+    margin: auto;
+
+    text-align: center;
+    }
+
+section > div p {
+    margin: 0px auto 10px auto;
+
+    font-size: 1.3em;
+}
+
+div#img {
+    background-size: cover;
+    background-position: center bottom;
+
+    width: 300px;
+    height: 300px;
+    margin: auto;
+
+    border-radius: 50%;
+
+}
+
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+
+    color: white;
+}

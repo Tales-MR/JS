@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+:root {
+    --img1: url(imagens/velho_mulher.jpg);
+    --img2: url(imagens/velho_homem.jpg);
+    --img3: url(imagens/adulto_mulher.jpg);
+    --img4: url(imagens/adulto_homem.jpg);
+    --img5: url(imagens/jovem_mulher.jpg);
+    --img6: url(imagens/jovem_homem.jpg);
+    --img7: url(imagens/bebe_mulher.jpg);
+    --img8: url(imagens/bebe_homem.jpg)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(215, 250, 250);
+}
+
+header {
+    text-align: center;
+}
+
+header > h1 {
+    margin: 20px;
+}
+
+main {
+    display: block;
+
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.234);
+
+    margin: auto;
+    padding: 20px;
+    width: 500px;
+}
+
+main p {
+    display: inline-block;
+
+    margin: 10px 0 10px 0;
+}
+
+main input.check {
+
+    color: blue;
+}
+
+main > div > input#ver{
+
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.246);
+    background-color: rgb(208, 255, 255);
+
+    padding: 4px;
+}
+
+main > div#container {
+    margin: 30px 0 0 0;
+}
+
+main div#img {
+    display: none;
+    background-color: white;
+
+    height: 200px;
+    width: 200px;
+
+    margin: auto;
+
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.324);
+}
+
+footer {
+    margin: 50px;
+
+    text-align: center;
+}
