@@ -29,10 +29,15 @@ else {
     }
     
     //while
-    while (val_ini < fim.value && val_ini + val_pas <= fim.value) {
-        val_ini += val_pas;
-
-        txt +=  '👉' + val_ini;
+    if (fim.value < val_ini) {
+        for (val_ini; val_ini > fim.value && val_ini + val_pas >= fim.value;txt +=  '👉' + val_ini) {
+            val_ini -= val_pas;
+        }
+    }
+    else if (fim.value > val_ini) {
+        for (val_ini; val_ini < fim.value && val_ini + val_pas <= fim.value;txt +=  '👉' + val_ini){
+            val_ini += val_pas;
+        }
     }
 
     titulo.innerHTML = 'Contando...'
