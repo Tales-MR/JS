@@ -30,18 +30,18 @@ else {
     
     //while
     if (fim.value < val_ini) {
-        for (val_ini; val_ini > fim.value && val_ini + val_pas >= fim.value;txt +=  '👉' + val_ini) {
+        for (val_ini; val_ini > fim.value && val_ini + val_pas >= fim.value;txt +=  '\u{1F449}' + val_ini) {
             val_ini -= val_pas;
         }
     }
     else if (fim.value > val_ini) {
-        for (val_ini; val_ini < fim.value && val_ini + val_pas <= fim.value;txt +=  '👉' + val_ini){
+        for (val_ini; val_ini < fim.value && val_ini + val_pas <= fim.value;txt +=  '\u{1F449}' + val_ini){
             val_ini += val_pas;
         }
     }
 
     titulo.innerHTML = 'Contando...'
 
-    txr.innerText = txt + '🏁';
+    txr.innerText = txt + '\u{1F3C1}';
 }
 }

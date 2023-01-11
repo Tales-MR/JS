@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* { /*Resetando os valores de margin e padding de todos os elementos*/
+    margin: 0;
+    padding: 0;
+
+    /*Configurando a fonte padrão*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body { /*Adicionando com ao body*/
+    background-color: rgb(65, 147, 255);
+}
+
+header { /*Configurações do título*/
+    margin: 50px;
+
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+main { /*Configurações referente ao main - cor de fundo, sombra, alinhamento, padding,...*/
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+    
+    width: 500px;
+
+    margin: auto;
+    padding: 10px;
+}
+
+main div#res { /*Configurações referentes aos elementos internos do main, as divs*/
+    margin: 20px 0;
+}
+
+select#addvalue { /*Configurações refentes a exibição dos resultados*/
+    min-width: 180px;
+    height: max-content;
+
+    margin-bottom: 10px;
+}
+
+div#res input#con { /*Configurações refentes ao botão de finalizar*/
+    display: block;
+}
+
+footer { /*Centralizando o footer e dando espaçamento*/
+    margin: 20px;
+
+    text-align: center;
+}

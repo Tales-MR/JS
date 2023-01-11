@@ -1,0 +1,19 @@
+1 - Criar a parte HTML - FEITO;
+    1.1 - iniciar - FEITO;
+    1.2 - importar estilo - FEITO;
+    1.3 - importar js - FEITO;
+    1.4 - estruturar - FEITO;
+////
+
+2 - Estilizar a parte HTML -
+    2.1 - iniciar regra utf-8 - FEITO;
+    2.2 - configurar header - FEITO;
+    2.3 - configurar main - FEITO;
+        2.3.1 - div - FEITO;
+        2.3.2 - resultado - FEITO;
+    2.4 - configurar footer - FEITO;
+////
+
+3 - JavaScript - 
+    3.1 - iniciar armazenamento de dados - 
+    3.2 - iniciar a função -
